@@ -1,9 +1,8 @@
 const sentence = "hello there from lighthouse labs";
+let delay = 0;
 for (const char of sentence) {
-  process.stdout.write(char);
-  let delay = 0;
   setTimeout(() => {
-
+    process.stdout.write(char);
   }, delay)
   delay += 50;
 };
